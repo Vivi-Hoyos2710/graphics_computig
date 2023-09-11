@@ -168,35 +168,6 @@ public class GraficarFiguras2 extends JPanel implements KeyListener {
         int tecla = e.getKeyCode();
         System.out.println("aaaaaaaaaaaaaaaaaaaaaaa " + tecla);
 
-        /*
-         * double [][] MR = {{1,0,10},{0,1,0},{0,0,1}};
-         * Matrix3X3 matrizDerecha = new Matrix3X3(MR);
-         * 
-         * double [][] ML = {{1,0,-10},{0,1,0},{0,0,1}};
-         * Matrix3X3 matrizIzquierda = new Matrix3X3(ML);
-         * 
-         * double [][] MU = {{1,0,0},{0,1,10},{0,0,1}};
-         * Matrix3X3 matrizArriba = new Matrix3X3(MU);
-         * 
-         * double [][] MD = {{1,0,0},{0,1,-10},{0,0,1}};
-         * Matrix3X3 matrizAbajo = new Matrix3X3(MD);
-         * 
-         * double [][] MRotateRight =
-         * {{Math.cos(Math.toRadians(10)),-(Math.sin(Math.toRadians(10))),0},{Math.sin(
-         * Math.toRadians(10)),Math.cos(Math.toRadians(10)),0},{0,0,1}};
-         * Matrix3X3 matrizRotarDerecha = new Matrix3X3(MRotateRight);
-         * 
-         * double [][] MRotateLeft =
-         * {{Math.cos(Math.toRadians(10)),Math.sin(Math.toRadians(10)),0},{-(Math.sin(
-         * Math.toRadians(10))),Math.cos(Math.toRadians(10)),0},{0,0,1}};
-         * Matrix3X3 matrizRotarIzquierda = new Matrix3X3(MRotateLeft);
-         * 
-         * double [][] MMagnify = {{2,0,0},{0,2,0},{0,0,1}};
-         * Matrix3X3 matrizAgrandar = new Matrix3X3(MMagnify);
-         * 
-         * double [][] MReduce = {{0.5,0,0},{0,0.5,0},{0,0,1}};
-         * Matrix3X3 matrizReducir = new Matrix3X3(MReduce);
-         */
         double[][] MTras = { { 1, 0, dx }, { 0, 1, dy }, { 0, 0, 1 } };
         Matrix3X3 matrizTraslacion = new Matrix3X3(MTras);
 
