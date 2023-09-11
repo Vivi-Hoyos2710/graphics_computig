@@ -50,12 +50,6 @@ public class TranslScalRot4x4 extends Matrix4x4 {
         Matrix4x4 traslacionBack = new Translation4x4(centerX, centerY, centerZ);
         Matrix4x4 resultDevuelta= super.times(traslacionBack, yCenter);
         Matrix4x4 finalResult= super.times(translation, resultDevuelta);
-        /*
-         * Matrix4x4 result1 = super.times(scal, translation);
-         * Matrix4x4 result2 = super.times(rotationZ, result1); //
-         * Matrix4x4 result3 = super.times(rotationX, result2);
-         * Matrix4x4 result4 = super.times(rotationY, result3);
-         */
         this.matrix = finalResult.matrix;
 
     }
